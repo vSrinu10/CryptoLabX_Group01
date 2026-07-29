@@ -1,0 +1,5 @@
+Cryptography is the science of secure communication.
+
+This is a sample text file.
+
+CryptoLabX will use this file for analysis.
