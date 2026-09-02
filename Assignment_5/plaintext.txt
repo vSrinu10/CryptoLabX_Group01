@@ -1,0 +1,39 @@
+practice, but when concrete security is not an immediate concern it is conve-
+nient instead to use an asymptotic approach to security; this is the approach
+taken in this book. This approach, rooted in complexity theory, introduces
+an integer-valued security parameter (denoted by n) that parameterizes both
+cryptographic schemes as well as all involved parties (namely, the honest par-
+ties as well as the attacker). When honest parties initialize a scheme (i.e.,
+when they generate keys), they choose some value n for the security parame-
+ter; for the purposes of this discussion, one can think of the security parameter
+as corresponding to the length of the key. The security parameter is assumed
+to be known to any adversary attacking the scheme, and we now view the
+running time of the adversary, as well as its success probability, as functions
+of the security parameter rather than as concrete numbers. Then:
+1. We equate “efficient adversaries” with randomized (i.e., probabilistic)
+algorithms running in time polynomial in n. This means there is some
+polynomial p such that the adversary runs for time at most p(n) when
+the security parameter is n. We also require—for real-world efficiency—
+that honest parties run in polynomial time, although we stress that the
+adversary may be much more powerful (and run much longer than) the
+honest parties.
+2. We equate the notion of “small probabilities of success” with success
+probabilities smaller than any inverse polynomial in n (see Definition 3.4).
+Such probabilities are called negligible.
+Let ppt stand for “probabilistic polynomial-time.” A definition of asymptotic
+security then takes the following general form:
+A scheme is secure if any ppt adversary succeeds in breaking the
+scheme with at most negligible probability.
+This notion of security is asymptotic since security depends on the behavior
+of the scheme for sufficiently large values of n. The following example makes
+this clear.
+Example 3.2
+Say we have a scheme that is asymptotically secure. Then it may be the
+case that an adversary running for n3 minutes can succeed in “breaking the
+scheme” with probability 240 · 2−n (which is a negligible function of n). When
+n ≤ 40 this means that an adversary running for 403 minutes (about 6 weeks)
+can break the scheme with probability 1, so such values of n are not very
+useful. Even for n = 50 an adversary running for 503 minutes (about 3
+months) can break the scheme with probability roughly 1/1000, which may
+not be acceptable. On the other hand, when n = 500 an adversary running
+for 200 years breaks the scheme only with probability roughly 2−500. 
