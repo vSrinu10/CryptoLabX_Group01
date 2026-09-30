@@ -1,0 +1,21 @@
+Keyword: Plaintext: 
+Key Matrix:
+E C H O M
+N A R Y I
+S T U P L
+F X B D G
+K Q V W Z
+
+Prepared Digraphs:
+
+
+Ciphertext:
+
+
+Decrypted Text:
+
+
+Digraph Frequency:
+
+Verification:
+SUCCESS
