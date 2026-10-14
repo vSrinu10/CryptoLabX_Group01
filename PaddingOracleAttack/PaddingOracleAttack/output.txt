@@ -1,0 +1,6 @@
+Ciphertext: c50e494f94f14edc92bc2a2bfa4ece28da5f36e8d9afb34cc9fb53a981e961ab16f83a8559f5c77536a8fa79017d890c
+IV: 1c3a8bc1e38a179ec59f0ca1758597f3
+Starting padding oracle attack...
+Recovered plaintext: This is a padding oracle attack demonstration.
+Total oracle queries: 6960
+Recovery successful: True
